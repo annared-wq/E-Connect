@@ -3,7 +3,6 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
-
 function figmaAssetResolver() {
   return {
     name: 'figma-asset-resolver',
@@ -13,10 +12,11 @@ function figmaAssetResolver() {
         return path.resolve(__dirname, 'src/assets', filename)
       }
     },
-  }
+  }npx pnpm run build
 }
 
 export default defineConfig({
+  base: './', // 👈 Добавили для корректной работы поддомена hello.econnect.io
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
