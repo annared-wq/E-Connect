@@ -67,9 +67,9 @@ const COMPLIANCE_ITEMS = [
   },
   {
     label: "Trade License No.",
-    value: "FZCO-XXXXXX",
-    placeholder: true,
-    note: "Replace with your actual license number",
+    value: "FZCO-29131",
+    placeholder: false,
+    note: "Active and in good standing",
   },
   {
     label: "Jurisdiction",
