@@ -16,6 +16,7 @@ function useFavicon() {
 import {
   Globe,
   Mail,
+  Phone,
   MapPin,
   FileText,
   ExternalLink,
@@ -725,6 +726,12 @@ export default function App() {
                 icon: Mail,
                 title: "Email",
                 lines: ["management@econnect.io"],
+                placeholder: false,
+              },
+              {
+                icon: Phone,
+                title: "Phone",
+                lines: ["+971 55 221 9632"],
                 placeholder: false,
               },
             ].map(({ icon: Icon, title, lines, note, placeholder }) => (
