@@ -12,7 +12,7 @@ function figmaAssetResolver() {
         return path.resolve(__dirname, 'src/assets', filename)
       }
     },
-  }npx pnpm run build
+  }
 }
 
 export default defineConfig({
