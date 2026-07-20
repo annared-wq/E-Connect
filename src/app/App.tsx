@@ -640,8 +640,8 @@ export default function App() {
                     {
                       name: "Trade License",
                       desc: "Issued by UAE Free Zone authority — IFZA",
-                      href: "#",
-                      placeholder: true,
+                      href: "/documents/trade-license.pdf",
+                      placeholder: false,
                     },
                   ].map((doc) => (
                     <div
@@ -667,8 +667,8 @@ export default function App() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Download size={12} />
-                          Download
+                          <ExternalLink size={12} />
+                          Open
                         </a>
                       )}
                     </div>
